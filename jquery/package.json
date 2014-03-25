@@ -1,0 +1,22 @@
+{
+  "family": "mooxe",
+  "name": "jquery",
+  "version": "2.1.1",
+  "description": "JavaScript library for DOM operations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jquery/jquery.git"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "author": {
+    "name": "jQuery Foundation and other contributors",
+    "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt"
+  },
+  "spm": {
+    "output": ["jquery.js", "jquery.min.js", "jquery.ming.map"]
+  }
+}

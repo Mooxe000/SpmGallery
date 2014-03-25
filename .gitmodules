@@ -1,0 +1,3 @@
+[submodule "jquery/source"]
+	path = jquery/source
+	url = git@github.com:Mooxe000/jquery.git
