@@ -1,0 +1,6 @@
+[submodule "jquery/source"]
+	path = jquery/source
+	url = git@github.com:Mooxe000/jquery.git
+[submodule "modernizr/source"]
+	path = modernizr/source
+	url = https://github.com/Modernizr/Modernizr
