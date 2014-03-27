@@ -4,3 +4,6 @@
 [submodule "modernizr/source"]
 	path = modernizr/source
 	url = git@github.com:Mooxe000/Modernizr.git
+[submodule "pure/source"]
+	path = pure/source
+	url = git@github.com:Mooxe000/pure.git
