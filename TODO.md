@@ -10,8 +10,8 @@ TODO LIST
 
 ----
 
-1. Jquery 2.X CMD 封装
-1. Modernizr 中 Html5shiv 替换成最新版本
+1. Jquery 2.X CMD 封装    -- done
+1. Modernizr 中 Html5shiv 替换成最新版本    -- done
 1. Pure 中 Normalize 替换成最新版本
 1. Less Coffee Jade Markdown CMD 封装
 1. Semantic ui CMD 封装
