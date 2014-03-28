@@ -5,8 +5,6 @@ Log = require 'log'
 log = new Log 'info'
 
 require 'shelljs/make'
-requestsync = require 'request-sync'
-File = require 'file-utils'
 
 srcpath = "#{__dirname}/source"
 distpath = "#{__dirname}/dist"
@@ -40,5 +38,5 @@ target.all = ->
   target.build()
   echo '>>> demploy dist file'
   target.demdist()
-#  echo '>>> publish package'
-#  target.publish()
+  echo '>>> publish package'
+  target.publish()

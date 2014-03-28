@@ -1,6 +1,10 @@
 {
-  "family": "bustling",
+  "family": "mooxe",
   "name": "pure",
   "version": "0.5.0",
-  "repository": "git://github.com/yui/pure.git"
+  "description": "A set of small, responsive CSS modules that you can use in every web project.",
+  "repository": "git://github.com/yui/pure.git",
+  "spm": {
+    "output": ["pure.css", "pure.min.css"]
+  }
 }
