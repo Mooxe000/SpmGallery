@@ -7,3 +7,6 @@
 [submodule "pure/source"]
 	path = pure/source
 	url = git@github.com:Mooxe000/pure.git
+[submodule "semantic-ui/source"]
+	path = semantic-ui/source
+	url = git@github.com:Mooxe000/Semantic-UI.git

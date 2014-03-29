@@ -18,16 +18,16 @@ target.update = ->
   cd "#{srcpath}/src"
 
   html5CmdWrap = (src) ->
-    [
-      "define(function() {"
-      "  // Take the html5 variable out of the"
-      "  // html5shiv scope so we can return it."
-      "  var html5;"
-      ""
-      src
-      "  return html5;"
-      "});"
-    ].join("\n")
+    """
+    define(function() {
+      // Take the html5 variable out of the
+      // html5shiv scope so we can return it.
+      var html5;
+
+    #{src}
+      return html5;
+    });
+    """
 
   echo '>>> update html5shiv file'
   html5shivStr = (requestsync html5shivUrl).body

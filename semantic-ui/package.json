@@ -1,0 +1,39 @@
+{
+  "family": "mooxe",
+  "name": "semantic",
+  "version": "0.15.2",
+  "title": "Semantic UI",
+  "description": "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
+  "homepage": "http://www.semantic-ui.com",
+  "author": "Jack Lukic <jacklukic@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Semantic-Org/Semantic-UI.git"
+  },
+  "spm": {
+    "output": [
+        "css/semantic.css",
+        "css/semantic.min.css",
+        "fonts/basic.icons.eot",
+        "fonts/basic.icons.svg",
+        "fonts/basic.icons.ttf",
+        "fonts/basic.icons.woff",
+        "fonts/icons.eot",
+        "fonts/icons.otf",
+        "fonts/icons.svg",
+        "fonts/icons.ttf",
+        "fonts/icons.woff",
+        "images/loader-large.gif",
+        "images/loader-large-inverted.gif",
+        "images/loader-medium.gif",
+        "images/loader-medium-inverted.gif",
+        "images/loader-mini.gif",
+        "images/loader-mini-inverted.gif",
+        "images/loader-small.gif",
+        "images/loader-small-inverted.gif",
+        "javascript/semantic.js",
+        "javascript/semantic..min.js"
+    ]
+  }
+}
