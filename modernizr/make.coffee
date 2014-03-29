@@ -7,6 +7,7 @@ log = new Log 'info'
 require 'shelljs/make'
 requestsync = require 'request-sync'
 File = require 'file-utils'
+replace = require 'replace'
 
 srcpath = "#{__dirname}/source"
 distpath = "#{__dirname}/dist"
@@ -16,14 +17,28 @@ target.update = ->
   html5printshivUrl = 'https://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv-printshiv.js'
   cd "#{srcpath}/src"
 
+  html5CmdWrap = (src) ->
+    [
+      "define(function() {"
+      "  // Take the html5 variable out of the"
+      "  // html5shiv scope so we can return it."
+      "  var html5;"
+      ""
+      src
+      "  return html5;"
+      "});"
+    ].join("\n")
+
   echo '>>> update html5shiv file'
   html5shivStr = (requestsync html5shivUrl).body
-#  echo html5shivStr
+  html5shivStr = html5CmdWrap html5shivStr
+  #  echo html5shivStr
   File.write "#{srcpath}/src/html5shiv.js", html5shivStr
 
   echo '>>> update html5printshiv file'
   html5printshivStr = (requestsync html5printshivUrl).body
-#  echo html5printshivStr
+  html5printshivStr = html5CmdWrap html5printshivStr
+  #  echo html5printshivStr
   File.write "#{srcpath}/src/html5printshiv.js", html5printshivStr
 
 target.clean = ->
@@ -58,3 +73,12 @@ target.all = ->
   target.rename()
   echo '>>> publish package'
   target.publish()
+
+repfile = (tgfile, regStr, repStr) ->
+  replace({
+    regex: regStr,
+    replacement: repStr,
+    paths: [tgfile],
+    recursive: true,
+    silent: true,
+  });
