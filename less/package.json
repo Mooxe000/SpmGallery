@@ -1,0 +1,55 @@
+{
+    "family": "mooxe",
+    "name": "less",
+    "version": "1.7.0",
+    "description": "Leaner CSS",
+    "homepage": "http://lesscss.org",
+    "author": {
+        "name": "Alexis Sellier",
+        "email": "self@cloudhead.net"
+    },
+    "contributors": [
+        "The Core Less Team"
+    ],
+    "bugs": {
+        "url": "https://github.com/less/less.js/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/less/less.js.git"
+    },
+    "licenses": [
+        {
+            "type": "Apache v2",
+            "url": "https://github.com/less/less.js/blob/master/LICENSE"
+        }
+    ],
+    "keywords": [
+        "compile less",
+        "css nesting",
+        "css variable",
+        "css",
+        "gradients css",
+        "gradients css3",
+        "less compiler",
+        "less css",
+        "less mixins",
+        "less",
+        "less.js",
+        "lesscss",
+        "mixins",
+        "nested css",
+        "parser",
+        "preprocessor",
+        "bootstrap css",
+        "bootstrap less",
+        "style",
+        "styles",
+        "stylesheet",
+        "variables in css",
+        "css less"
+    ],
+    "spm": {
+        "output": [ "less.js", "less.min.js" ]
+    }
+}

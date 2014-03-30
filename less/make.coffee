@@ -9,6 +9,8 @@ require 'shelljs/make'
 srcpath = "#{__dirname}/source"
 distpath = "#{__dirname}/dist"
 
+version = '1.7.0'
+
 setdir = (dir) ->
   pwd = process.cwd()
   unless pwd is dir
@@ -23,15 +25,12 @@ target.mkdist = ->
 
 target.build = ->
   setdir srcpath
-  # check npm support
-  unless test '-e', "#{srcpath}/node_modules"
-    exec 'npm install'
-  # grunt
   exec 'grunt'
 
 target.dmdist = ->
   setdir __dirname
-  cp '-R', "#{srcpath}/build/packaged/*", distpath
+  cp "#{srcpath}/dist/less-#{version}.js", "#{distpath}/less.js"
+  cp "#{srcpath}/dist/less-#{version}.min.js", "#{distpath}/less.min.js"
 
 target.publish = ->
   setdir __dirname

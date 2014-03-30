@@ -12,7 +12,7 @@ target.build = ->
   cd srcpath
   # check npm support
   unless test '-e', "#{srcpath}/node_modules"
-    exec 'npm install --registry=http://registry.cnpmjs.org'
+    exec 'npm install'
   # grunt
   exec 'grunt'
   # cp dist
