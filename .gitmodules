@@ -10,3 +10,6 @@
 [submodule "semantic-ui/source"]
 	path = semantic-ui/source
 	url = git@github.com:Mooxe000/Semantic-UI.git
+[submodule "coffee-script/source"]
+	path = coffee-script/source
+	url = git@github.com:Mooxe000/coffee-script.git

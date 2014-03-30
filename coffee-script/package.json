@@ -1,0 +1,23 @@
+{
+    "family": "mooxe",
+    "name": "coffee-script",
+    "version": "1.7.1",
+    "description": "Unfancy JavaScript",
+    "author": "Jeremy Ashkenas",
+    "homepage": "http://coffeescript.org",
+    "license": "MIT",
+    "keywords": [
+        "javascript",
+        "language",
+        "coffeescript",
+        "compiler"
+    ],
+    "bugs": "https://github.com/jashkenas/coffee-script/issues",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jashkenas/coffee-script.git"
+    },
+    "spm": {
+        "output": [ "coffee-script.js", "coffee-script.min.js" ]
+    }
+}
