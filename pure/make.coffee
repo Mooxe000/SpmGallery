@@ -7,7 +7,13 @@ log = new Log 'info'
 require 'shelljs/make'
 
 srcpath = "#{__dirname}/source"
-distpath = "#{__dirname}/dist"
+pubpath = "#{__dirname}/public"
+distpath = "#{pubpath}/dist"
+
+setdir = (dir) ->
+  pwd = process.cwd()
+  unless pwd is dir
+    cd dir
 
 target.clean = ->
   rm "-rf", distpath

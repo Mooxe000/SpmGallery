@@ -4,3 +4,4 @@ sea-modules
 bower_components
 temp
 dist
+gulpfile.js

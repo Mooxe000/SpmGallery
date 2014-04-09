@@ -1,0 +1,22 @@
+{
+    "name": "SpmGalley",
+    "version": "0.0.1",
+    "author": "FooTearth <footearth@gmail.com>",
+    "description": "CMD Modules used in the Sea js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Mooxe000/SpmGallery.git"
+    },
+    "scripts": {
+        "watch": "grunt watch",
+        "gulp": "gulp test"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-contrib-coffee": "~0.10.1",
+        "grunt-contrib-watch": "~0.6.1",
+        "gulp": "~3.6.0",
+        "gulp-util": "~2.2.14"
+    }
+}

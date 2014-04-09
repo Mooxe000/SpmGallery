@@ -13,9 +13,6 @@
 [submodule "coffee-script/source"]
 	path = coffee-script/source
 	url = git@github.com:Mooxe000/coffee-script.git
-[submodule "less-js/source"]
-	path = less-js/source
-	url = git@github.com:Mooxe000/less.js.git
 [submodule "less/source"]
 	path = less/source
 	url = git@github.com:Mooxe000/less.js.git
