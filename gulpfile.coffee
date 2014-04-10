@@ -15,40 +15,61 @@ pkglist = [
 ]
 
 gulp.task 'default', ->
-  gutil.log (
-    gutil.colors.red 'Hello',
-    gutil.colors.green 'World',
-    gutil.colors.cyan '!!!'
-  )
+  do pure
+  do SemanticUi
 
-gulp.task 'test', () ->
+modernizr = ->
+  pkgname = 'pure'
+  pkgpath = "#{__dirname}/#{pkgname}"
+
+  srcpath = "#{pkgpath}/source"
+  pubpath = "#{pkgpath}/public"
+  distpath = "#{pubpath}/dist"
+
+  distfiles = [
+    "#{srcpath}/build/pure.css"
+    "#{srcpath}/build/pure-min.css"
+  ]
+
+  checkdist distpath
+  cleandist distpath
+  buildproj srcpath
+  dmproj distfiles, distpath
+  pubproj pubpath
+
+pure = ->
+  pkgname = 'pure'
+  pkgpath = "#{__dirname}/#{pkgname}"
+
+  srcpath = "#{pkgpath}/source"
+  pubpath = "#{pkgpath}/public"
+  distpath = "#{pubpath}/dist"
+
+  distfiles = [
+    "#{srcpath}/build/pure.css"
+    "#{srcpath}/build/pure-min.css"
+  ]
+
+  checkdist distpath
+  cleandist distpath
+  buildproj srcpath
+  dmproj distfiles, distpath
+  pubproj pubpath
+
+SemanticUi = ->
   pkgname = 'semantic-ui'
   pkgpath = "#{__dirname}/#{pkgname}"
 
   srcpath = "#{pkgpath}/source"
   pubpath = "#{pkgpath}/public"
   distpath = "#{pubpath}/dist"
-  distfrom = "#{srcpath}/build/packaged"
+  distfiles = [ "#{srcpath}/build/packaged/*" ]
 
-  # check distpath
-  checkdir distpath
-
-  # clean distpath
-  rm '-rf', "#{distpath}/*"
-
-  # build project
-  doindir srcpath, ->
-    # check npm support
-    unless test '-e', "#{srcpath}/node_modules"
-      exec 'npm install'
-    exec 'grunt'
-
-  # demploy project
-  cp '-R', "#{distfrom}/*", distpath
-
-  # publist project
-  doindir pubpath, ->
-    exec 'spm publish -f'
+  checkdist distpath
+  cleandist distpath
+  buildproj srcpath
+  dmproj distfiles, distpath
+  pubproj pubpath
 
 checkdir = (dirpath) ->
   unless test '-e', "#{dirpath}"
@@ -78,3 +99,27 @@ doindir = (cddir, dosth) ->
     cd cddir
   do dosth
   cd pwd
+
+# check distpath
+checkdist = (distpath) -> checkdir distpath
+
+# clean distpath
+cleandist = (distpath) -> rm '-rf', "#{distpath}/*"
+
+# build project
+buildproj = (srcpath) ->
+  doindir srcpath, ->
+    # check npm support
+    unless test '-e', "#{srcpath}/node_modules"
+      exec 'npm install'
+    exec 'grunt'
+
+# demploy project
+dmproj = (distfiles, distpath) ->
+  for distfile in distfiles
+    cp '-R', distfile, distpath
+
+# publist project
+pubproj = (pubpath) ->
+  doindir pubpath, ->
+    exec 'spm publish -f'

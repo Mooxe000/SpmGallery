@@ -9,7 +9,7 @@
     },
     "scripts": {
         "watch": "grunt watch",
-        "gulp": "gulp test"
+        "gulp": "gulp"
     },
     "dependencies": {},
     "devDependencies": {
