@@ -17,6 +17,6 @@
     "url": "https://github.com/jquery/jquery/blob/master/AUTHORS.txt"
   },
   "spm": {
-    "output": ["jquery.js", "jquery.min.js", "jquery.ming.map"]
+    "output": ["jquery.js", "jquery.min.js", "jquery.min.map"]
   }
 }

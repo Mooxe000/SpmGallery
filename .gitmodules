@@ -16,3 +16,6 @@
 [submodule "less/source"]
 	path = less/source
 	url = git@github.com:Mooxe000/less.js.git
+[submodule "font-awesome/source"]
+	path = font-awesome/source
+	url = https://github.com/FortAwesome/Font-Awesome
