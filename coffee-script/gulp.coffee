@@ -4,8 +4,8 @@ echo = console.log
 gutil = require 'gulp-util'
 log = gutil.log
 
-dir = require '../_libs/dir'
 process = require '../_libs/process'
+dir = require '../_libs/dir'
 
 exports.run = ->
   pkgpath = "#{__dirname}"

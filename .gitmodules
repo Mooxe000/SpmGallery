@@ -19,3 +19,6 @@
 [submodule "font-awesome/source"]
 	path = font-awesome/source
 	url = https://github.com/FortAwesome/Font-Awesome
+[submodule "jade/source"]
+	path = jade/source
+	url = https://github.com/visionmedia/jade

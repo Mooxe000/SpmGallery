@@ -14,6 +14,7 @@ pkglist = [
   'jquery'
   'coffee-script'
   'less'
+  'jade'
 ]
 
 modernizr = require './modernizr/gulp'
@@ -23,6 +24,7 @@ semanticui = require './semantic-ui/gulp'
 jquery = require './jquery/gulp'
 coffeescript = require './coffee-script/gulp'
 less = require './less/gulp'
+jade = require './jade/gulp'
 
 gulp.task 'default', ->
   do modernizr.run
@@ -32,4 +34,5 @@ gulp.task 'default', ->
   do jquery.run
   do coffeescript.run
   do less.run
+  do jade.run
 

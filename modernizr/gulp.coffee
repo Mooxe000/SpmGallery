@@ -4,9 +4,9 @@ echo = console.log
 gutil = require 'gulp-util'
 log = gutil.log
 
+process = require '../_libs/process'
 requestsync = require 'request-sync'
 File = require 'file-utils'
-process = require '../_libs/process'
 
 exports.run = ->
   pkgpath = "#{__dirname}"
