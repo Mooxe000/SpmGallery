@@ -17,6 +17,7 @@ pkglist = [
   'jade'
   'markdown'
   'normalize-css'
+  'respond'
 ]
 
 modernizr = require './modernizr/gulp'
@@ -32,14 +33,14 @@ normalizecss = require './normalize-css/gulp'
 respond = require './respond/gulp'
 
 gulp.task 'default', ->
-#  do modernizr.run
-#  do pure.run
-#  do fontawesome.run
-#  do semanticui.run
-#  do jquery.run
-#  do coffeescript.run
-#  do less.run
-#  do jade.run
-#  do markdown.run
-#  do normalizecss.run
+  do modernizr.run
+  do pure.run
+  do fontawesome.run
+  do semanticui.run
+  do jquery.run
+  do coffeescript.run
+  do less.run
+  do jade.run
+  do markdown.run
+  do normalizecss.run
   do respond.run
