@@ -15,6 +15,7 @@ pkglist = [
   'coffee-script'
   'less'
   'jade'
+  'markdown'
 ]
 
 modernizr = require './modernizr/gulp'
@@ -25,6 +26,7 @@ jquery = require './jquery/gulp'
 coffeescript = require './coffee-script/gulp'
 less = require './less/gulp'
 jade = require './jade/gulp'
+markdown = require './markdown/gulp'
 
 gulp.task 'default', ->
   do modernizr.run
@@ -35,4 +37,5 @@ gulp.task 'default', ->
   do coffeescript.run
   do less.run
   do jade.run
+  do markdown.run
 

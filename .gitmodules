@@ -22,3 +22,6 @@
 [submodule "jade/source"]
 	path = jade/source
 	url = https://github.com/visionmedia/jade
+[submodule "markdown/source"]
+	path = markdown/source
+	url = git@github.com:Mooxe000/markdown-js.git

@@ -20,6 +20,7 @@ TODO LIST
 1. 修改 spm-text 增加对 Less Coffee Jade Markdown 的支持
 1. 封装一些 构建 工具 util && task && plugin
 
+    * add process log
     * process default 任务 覆盖 && 任意点 插入 自定义任务
 
 1. 统一 压缩，生成 source map

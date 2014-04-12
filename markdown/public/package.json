@@ -1,0 +1,34 @@
+{
+  "family": "mooxe",
+  "name": "markdown",
+  "version": "0.6.0",
+  "description": "A sensible Markdown parser for javascript",
+  "keywords": [
+    "markdown",
+    "text processing",
+    "ast"
+  ],
+  "maintainers": [
+    "Dominic Baggott <dominic.baggott@gmail.com> (http://evilstreak.co.uk)",
+    "Ash Berlin <ash_markdownjs@firemirror.com> (http://ashberlin.com)"
+  ],
+  "contributors": [
+    "Dominic Baggott <dominic.baggott@gmail.com> (http://evilstreak.co.uk)",
+    "Ash Berlin <ash_markdownjs@firemirror.com> (http://ashberlin.com)",
+    "XhmikosR <xhmikosr@users.sourceforge.net>",
+    "Robin Ward <robin.ward@gmail.com> (http://eviltrout.com)"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evilstreak/markdown-js.git"
+  },
+  "spm": {
+    "output": [ "markdown.js", "markdown.min.js" ]
+  }
+}
