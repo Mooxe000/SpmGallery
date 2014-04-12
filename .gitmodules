@@ -25,3 +25,9 @@
 [submodule "markdown/source"]
 	path = markdown/source
 	url = git@github.com:Mooxe000/markdown-js.git
+[submodule "normalize-css/source"]
+	path = normalize-css/source
+	url = https://github.com/necolas/normalize.css
+[submodule "respond/source"]
+	path = respond/source
+	url = https://github.com/scottjehl/Respond

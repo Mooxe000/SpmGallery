@@ -1,0 +1,17 @@
+{
+  "family": "mooxe",
+  "name": "normalize-css",
+  "version": "3.0.1",
+  "description": "Normalize.css as a node packaged module",
+  "style": "normalize.css",
+  "homepage": "http://necolas.github.io/normalize.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/necolas/normalize.css.git"
+  },
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "spm": {
+    "output": [ "normalize.css" ]
+  }
+}
