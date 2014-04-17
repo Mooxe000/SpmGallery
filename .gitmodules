@@ -31,3 +31,6 @@
 [submodule "respond/source"]
 	path = respond/source
 	url = https://github.com/scottjehl/Respond
+[submodule "animate-css/source"]
+	path = animate-css/source
+	url = https://github.com/daneden/animate.css

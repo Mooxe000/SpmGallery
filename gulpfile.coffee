@@ -31,6 +31,7 @@ jade = require './jade/gulp'
 markdown = require './markdown/gulp'
 normalizecss = require './normalize-css/gulp'
 respond = require './respond/gulp'
+animatecss = require './animate-css/gulp'
 
 gulp.task 'default', ->
   do modernizr.run
@@ -44,3 +45,4 @@ gulp.task 'default', ->
   do markdown.run
   do normalizecss.run
   do respond.run
+  do animatecss.run
